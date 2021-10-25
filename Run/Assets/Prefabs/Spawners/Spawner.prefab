@@ -45,24 +45,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94f0ae422fc3fe478864aa4d06904d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects:
-  - {fileID: 2385855496066513945, guid: 3e56e8929f2f98845b3e62cc14a29cca, type: 3}
-  - {fileID: 428424291367999150, guid: 2a7b6758fddefaf49827dacbb0acad14, type: 3}
-  - {fileID: 4098425462451293894, guid: b49a50be7e42a93428ac652e5babbc65, type: 3}
-  - {fileID: 4899993341713258575, guid: f3aa4588c652fb648a57ee3e85868675, type: 3}
-  - {fileID: 5852231701947497696, guid: 2f12e93aec150eb45aae8f30b64328b7, type: 3}
-  - {fileID: 5302450411966361311, guid: 364c784a7f96b5f46ba372cab379de2b, type: 3}
-  - {fileID: 2869382446871715786, guid: a67c1100de69f5c45933d58eb46399f0, type: 3}
-  - {fileID: 8636641726908869926, guid: 014f0b5ac691dc04682f6189062771e5, type: 3}
-  - {fileID: 1906666761591435634, guid: 084ffa572c01d6b4db727107c9898da6, type: 3}
+  obstaclePrefab:
   - {fileID: 7354652315633899175, guid: c73953fe3535a2e4187fbdc82f138400, type: 3}
-  - {fileID: 8067192216635112351, guid: 2afc74655dc3d6b45907529ed64f61d6, type: 3}
+  - {fileID: 5852231701947497696, guid: 2f12e93aec150eb45aae8f30b64328b7, type: 3}
   - {fileID: 7260382923757783676, guid: cf3621e95afa6ea428583837a2364974, type: 3}
+  - {fileID: 2869382446871715786, guid: a67c1100de69f5c45933d58eb46399f0, type: 3}
+  - {fileID: 428424291367999150, guid: 2a7b6758fddefaf49827dacbb0acad14, type: 3}
   - {fileID: 5006676047858062206, guid: 5fd742d53e1754246abd50194bb15f78, type: 3}
+  - {fileID: 8636641726908869926, guid: 014f0b5ac691dc04682f6189062771e5, type: 3}
+  - {fileID: 4098425462451293894, guid: b49a50be7e42a93428ac652e5babbc65, type: 3}
   - {fileID: 1228780880800750120, guid: 58babd27c0dd7114784a56814996f8e0, type: 3}
+  - {fileID: 1906666761591435634, guid: 084ffa572c01d6b4db727107c9898da6, type: 3}
+  - {fileID: 4899993341713258575, guid: f3aa4588c652fb648a57ee3e85868675, type: 3}
+  flatPrefab:
   - {fileID: 6614213446568937332, guid: fe791d76619093949a71c2f9c83ba02e, type: 3}
-  rand: 1
-  count: 0
+  - {fileID: 8067192216635112351, guid: 2afc74655dc3d6b45907529ed64f61d6, type: 3}
+  - {fileID: 5302450411966361311, guid: 364c784a7f96b5f46ba372cab379de2b, type: 3}
+  - {fileID: 1415181328649614234, guid: 4b8651e913280bf439e4e8a9515f05e6, type: 3}
+  bonusPrefab:
+  - {fileID: 6906296720170226997, guid: 0342f2022cff6484d91f3ac7fa6bacf3, type: 3}
+  - {fileID: 2618919650333478706, guid: 546334ec8cc46704aa6bd6f1643eb11b, type: 3}
+  rareObjectPrefab: []
 --- !u!331 &8890060194218401177
 SpriteMask:
   m_ObjectHideFlags: 0

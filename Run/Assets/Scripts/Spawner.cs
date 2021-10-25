@@ -1,34 +1,70 @@
+using System.Collections.Generic;
 using UnityEngine;
+
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] objects;
-    
-    [SerializeField] private int rand;
-    [SerializeField] private int count;
-    private bool _isObs;
 
-    public void Spawn()
+
+    [SerializeField] private List<GameObject> obstaclePrefab;
+    [SerializeField] private List<GameObject> flatPrefab;
+    [SerializeField] private List<GameObject> bonusPrefab;
+    [SerializeField] private List<GameObject> rareObjectPrefab;
+    private int _count;
+    private bool _prevObs;
+    
+    private void SpawnObstacle()
     {
-        rand = Random.Range(0, 5);
-        if (rand <= 3 && _isObs == false)
+        if (!_prevObs && _count >= 1) 
         {
-            int i = Random.Range(1, objects.Length);
-            Instantiate(objects[i], transform.position, Quaternion.identity);
-            _isObs = true;
-            count = 0;
+            var i = Random.Range(0, obstaclePrefab.Count);
+            Instantiate(obstaclePrefab[i], transform.position, Quaternion.identity);
+            _prevObs = true;
+            _count = 0;
         }
         else
         {
-            if (count < 1)
+            var rand = Random.Range(0, 100);
+            if (rand == 99)
             {
-                Instantiate(objects[0], transform.position, Quaternion.identity);
-                count++;
+                SpawnBonus();
             }
             else
             {
-                Instantiate(objects[0], transform.position, Quaternion.identity);
-                _isObs = false;
+                SpawnFlat();
             }
+
+            _count++;
+            _prevObs = false;
+        }
+
+    }
+
+    private void SpawnFlat()
+    {
+        var i = Random.Range(0, flatPrefab.Count);
+        Instantiate(flatPrefab[i], transform.position, Quaternion.identity);
+    }
+
+    private void SpawnBonus()
+    {
+        var i = Random.Range(0, bonusPrefab.Count);
+        Instantiate(bonusPrefab[i], transform.position, Quaternion.identity);
+    }
+    
+    public void Spawn()
+    {
+        var rand = Random.Range(0, 100);
+        if (rand >= 45 && rand!=99)
+        {
+            SpawnObstacle();
+        }
+        else if (rand == 99)
+        {
+            SpawnBonus();
+        }
+        else
+        {
+            SpawnFlat();
         }
     }
 }

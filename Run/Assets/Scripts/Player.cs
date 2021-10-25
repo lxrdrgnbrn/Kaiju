@@ -35,13 +35,28 @@ public class Player : MonoBehaviour
         {
             StartCoroutine(MegaJump());
         }
+
+        if (collision.gameObject.CompareTag("GodBonus"))
+        {
+            StartCoroutine(GodMode());
+        }
     }
 
     private IEnumerator MegaJump()
     {
         pc.force = 18;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         pc.force = 13;
+        yield return null;
+    }
+    
+    private IEnumerator GodMode()
+    {
+        health = 9999;
+        transform.localScale = new Vector2(1, 1);
+        yield return new WaitForSeconds(10);
+        health = 1;
+        transform.localScale = new Vector2(0.6f, 0.6f);
         yield return null;
     }
     
