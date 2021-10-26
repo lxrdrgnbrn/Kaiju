@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 249811286014507057}
   - component: {fileID: 2435169384959768279}
   - component: {fileID: 8193818770390311541}
+  - component: {fileID: 962139356528621315}
   m_Layer: 0
   m_Name: Cactus B
   m_TagString: Obstacle
@@ -109,6 +110,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3125, y: 0.9375}
   m_EdgeRadius: 0
+--- !u!114 &962139356528621315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330280553393581316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff37c00b0fa21e47bd0472542cae10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1872594542795322079
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -53,8 +53,8 @@ public class Spawner : MonoBehaviour
     
     public void Spawn()
     {
-        var rand = Random.Range(0, 100);
-        if (rand >= 45 && rand!=99)
+        var rand = Random.Range(0, 200);
+        if (rand <= 100 && rand!=99)
         {
             SpawnObstacle();
         }

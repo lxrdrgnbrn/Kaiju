@@ -13,6 +13,7 @@ TagManager:
   - MyPlayer
   - BonusMJ
   - GodBonus
+  - MultiplyBonus
   layers:
   - Default
   - TransparentFX

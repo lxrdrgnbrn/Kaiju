@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int score;
     [SerializeField] private int totalScore;
     [SerializeField] private int highscore;
+    [SerializeField] private Player player;
     public float speed=20f;
     private bool _isFirst = true;
     private bool _isPause=false;
@@ -62,7 +63,7 @@ public class GameManager : MonoBehaviour
     {
         while (true)
         {
-            score++;
+            score+=1*player.factor;
             scoreText.text = score.ToString();
             yield return new WaitForSeconds(0.1f);
             // ReSharper disable once IteratorNeverReturns

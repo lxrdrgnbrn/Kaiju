@@ -57,6 +57,7 @@ MonoBehaviour:
   - {fileID: 1228780880800750120, guid: 58babd27c0dd7114784a56814996f8e0, type: 3}
   - {fileID: 1906666761591435634, guid: 084ffa572c01d6b4db727107c9898da6, type: 3}
   - {fileID: 4899993341713258575, guid: f3aa4588c652fb648a57ee3e85868675, type: 3}
+  - {fileID: 7954098067085022657, guid: 0ff4820fb3d3f1348ad84bc770870a45, type: 3}
   flatPrefab:
   - {fileID: 6614213446568937332, guid: fe791d76619093949a71c2f9c83ba02e, type: 3}
   - {fileID: 8067192216635112351, guid: 2afc74655dc3d6b45907529ed64f61d6, type: 3}
@@ -65,6 +66,7 @@ MonoBehaviour:
   bonusPrefab:
   - {fileID: 6906296720170226997, guid: 0342f2022cff6484d91f3ac7fa6bacf3, type: 3}
   - {fileID: 2618919650333478706, guid: 546334ec8cc46704aa6bd6f1643eb11b, type: 3}
+  - {fileID: 6832692665097602772, guid: c7b1c4f3c36da784da064be2f2b4c622, type: 3}
   rareObjectPrefab: []
 --- !u!331 &8890060194218401177
 SpriteMask:
